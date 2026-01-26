@@ -1,0 +1,452 @@
+$date
+	Sat Dec 27 11:38:32 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module route_compute_tb $end
+$var wire 1 ! retry $end
+$var wire 12 " req_ports [11:0] $end
+$var parameter 32 # LOCAL_BITS $end
+$var parameter 32 $ TILE_BITS $end
+$var reg 2 % curr_lx [1:0] $end
+$var reg 2 & curr_ly [1:0] $end
+$var reg 16 ' curr_tile_x [15:0] $end
+$var reg 16 ( curr_tile_y [15:0] $end
+$var reg 2 ) dest_lx [1:0] $end
+$var reg 2 * dest_ly [1:0] $end
+$var reg 16 + dest_tile_x [15:0] $end
+$var reg 16 , dest_tile_y [15:0] $end
+$var reg 12 - expected_ports [11:0] $end
+$var reg 12 . link_up [11:0] $end
+$var reg 1 / pkt_valid $end
+$var reg 2 0 vc_class [1:0] $end
+$scope module dut $end
+$var wire 2 1 curr_lx [1:0] $end
+$var wire 2 2 curr_ly [1:0] $end
+$var wire 16 3 curr_tile_x [15:0] $end
+$var wire 16 4 curr_tile_y [15:0] $end
+$var wire 2 5 dest_lx [1:0] $end
+$var wire 2 6 dest_ly [1:0] $end
+$var wire 16 7 dest_tile_x [15:0] $end
+$var wire 16 8 dest_tile_y [15:0] $end
+$var wire 1 9 inter_tile $end
+$var wire 12 : link_up [11:0] $end
+$var wire 1 / pkt_valid $end
+$var wire 12 ; primary_ok [11:0] $end
+$var wire 1 ! retry $end
+$var wire 2 < vc_class [1:0] $end
+$var wire 1 = west_tile $end
+$var wire 1 > west_local $end
+$var wire 12 ? vc_mask [11:0] $end
+$var wire 1 @ south_tile $end
+$var wire 1 A south_local $end
+$var wire 12 B reroute_req [11:0] $end
+$var wire 12 C req_ports [11:0] $end
+$var wire 12 D primary_req [11:0] $end
+$var wire 1 E north_tile $end
+$var wire 1 F north_local $end
+$var wire 1 G east_tile $end
+$var wire 1 H east_local $end
+$var parameter 32 I LOCAL_BITS $end
+$var parameter 12 J OH_E $end
+$var parameter 12 K OH_N $end
+$var parameter 12 L OH_NE $end
+$var parameter 12 M OH_NW $end
+$var parameter 12 N OH_S $end
+$var parameter 12 O OH_SE $end
+$var parameter 12 P OH_SER_E $end
+$var parameter 12 Q OH_SER_N $end
+$var parameter 12 R OH_SER_S $end
+$var parameter 12 S OH_SER_W $end
+$var parameter 12 T OH_SW $end
+$var parameter 12 U OH_W $end
+$var parameter 32 V TILE_BITS $end
+$upscope $end
+$scope task run_test $end
+$var reg 2 W t_curr_lx [1:0] $end
+$var reg 2 X t_curr_ly [1:0] $end
+$var reg 16 Y t_curr_tile_x [15:0] $end
+$var reg 16 Z t_curr_tile_y [15:0] $end
+$var reg 2 [ t_dest_lx [1:0] $end
+$var reg 2 \ t_dest_ly [1:0] $end
+$var reg 16 ] t_dest_tile_x [15:0] $end
+$var reg 16 ^ t_dest_tile_y [15:0] $end
+$var reg 12 _ t_expected_ports [11:0] $end
+$var reg 12 ` t_link_up [11:0] $end
+$var reg 400 a t_msg [400:1] $end
+$var reg 2 b t_vc_class [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 V
+b1000 U
+b10000000 T
+b100000000000 S
+b1000000000 R
+b100000000 Q
+b10000000000 P
+b1000000 O
+b10 N
+b100000 M
+b10000 L
+b1 K
+b100 J
+b10 I
+b10000 $
+b10 #
+$end
+#0
+$dumpvars
+bx b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+bx W
+xH
+xG
+xF
+xE
+b0 D
+b0x0x00000x0x C
+b0x0x00000x0x B
+xA
+x@
+b111111111111 ?
+x>
+x=
+b0 <
+b0 ;
+b111111111111 :
+x9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+b0 0
+0/
+b111111111111 .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+b0x0x00000x0x "
+0!
+$end
+#5000
+b100 "
+b100 C
+b100 ;
+b1 B
+0!
+b100 D
+09
+1/
+0F
+0A
+b1 *
+b1 6
+1H
+0>
+b10 )
+b10 5
+0E
+0@
+b0 ,
+b0 8
+0G
+0=
+b0 +
+b0 7
+b1 &
+b1 2
+b1 %
+b1 1
+b0 (
+b0 4
+b0 '
+b0 3
+b1010011011010000110111101110010011101000010110101110010011000010110111001100111011001010010000001000101011000010111001101110100 a
+b100 _
+b111111111111 `
+b0 b
+b1 \
+b10 [
+b0 ^
+b0 ]
+b1 X
+b1 W
+b0 Z
+b0 Y
+#10000
+b1000 "
+b1000 C
+b1000 ;
+b1000 D
+0H
+1>
+b0 )
+b0 5
+b1010011011010000110111101110010011101000010110101110010011000010110111001100111011001010010000001010111011001010111001101110100 a
+b1000 _
+b0 [
+b100 -
+#15000
+b1 "
+b1 C
+b1 ;
+b1 D
+b100 B
+1F
+b10 *
+b10 6
+0>
+b1 )
+b1 5
+b101001101101000011011110111001001110100001011010111001001100001011011100110011101100101001000000100111001101111011100100111010001101000 a
+b1 _
+b10 \
+b1 [
+b1000 -
+#20000
+b10 "
+b10 C
+b10 ;
+b10 D
+0F
+1A
+b0 *
+b0 6
+b101001101101000011011110111001001110100001011010111001001100001011011100110011101100101001000000101001101101111011101010111010001101000 a
+b10 _
+b0 \
+b1 -
+#25000
+b10000 "
+b10000 C
+b10000 ;
+b10000 D
+1F
+0A
+b10 *
+b10 6
+1H
+b10 )
+b10 5
+b10011010110100101100100001011010111001001100001011011100110011101100101001000000100111001000101 a
+b10000 _
+b10 \
+b10 [
+b10 -
+#30000
+b100000 "
+b100000 C
+b100000 ;
+b100000 D
+0H
+1>
+b0 )
+b0 5
+b10011010110100101100100001011010111001001100001011011100110011101100101001000000100111001010111 a
+b100000 _
+b0 [
+b10000 -
+#35000
+b10000000000 "
+b10000000000 C
+b10000000000 ;
+b10000000000 D
+b100000000 B
+19
+0F
+b1 *
+b1 6
+0>
+b1 )
+b1 5
+b1 ,
+b1 8
+1G
+b10 +
+b10 7
+0@
+b1 (
+b1 4
+0=
+b1 '
+b1 3
+b10010010110111001110100011001010111001000101101011000110110110001110101011100110111010001100101011100100010000001000101011000010111001101110100 a
+b10000000000 _
+b1 \
+b1 [
+b1 ^
+b10 ]
+b1 Z
+b1 Y
+b100000 -
+#40000
+b100000000000 "
+b100000000000 C
+b100000000000 ;
+b100000000000 D
+0G
+1=
+b0 +
+b0 7
+b10010010110111001110100011001010111001000101101011000110110110001110101011100110111010001100101011100100010000001010111011001010111001101110100 a
+b100000000000 _
+b0 ]
+b10000000000 -
+#45000
+b100000000 "
+b100000000 C
+b100000000 ;
+b100000000 D
+b10000000000 B
+1E
+b10 ,
+b10 8
+0=
+b1 +
+b1 7
+b1001001011011100111010001100101011100100010110101100011011011000111010101110011011101000110010101110010001000000100111001101111011100100111010001101000 a
+b100000000 _
+b10 ^
+b1 ]
+b100000000000 -
+#50000
+b1000000000 "
+b1000000000 C
+b1000000000 ;
+b1000000000 D
+0E
+1@
+b0 ,
+b0 8
+1=
+b0 +
+b0 7
+b1001001011011100111010001100101011100100010110101100011011011000111010101110011011101000110010101110010001000000101001101101111011101010111010001101000 a
+b1000000000 _
+b0 ^
+b0 ]
+b100000000 -
+#55000
+1!
+b0 "
+b0 C
+b10000000000 D
+b0 ;
+b100000000 B
+b11111111 ?
+b1 0
+b1 <
+1G
+b1 +
+b1 7
+0@
+b0 (
+b0 4
+0=
+b0 '
+b0 3
+b101011001000011001000000110010001101001011100110110000101100010011011000110010101110011001000000101001101100101011100100100010001100101011100110010000001000101011000010111001101110100 a
+b0 _
+b1 b
+b1 ]
+b0 Z
+b0 Y
+b1000000000 -
+#60000
+0!
+b1 "
+b1 C
+b0 ;
+b100 D
+b1 B
+b111111111111 ?
+09
+b111111111011 .
+b111111111011 :
+b0 0
+b0 <
+1H
+b10 )
+b10 5
+0G
+b0 +
+b0 7
+b10100100110010101110010011011110111010101110100011001010010000001000101011000010111001101110100001000000010110100111110001000000100111001101111011100100111010001101000 a
+b1 _
+b111111111011 `
+b0 b
+b10 [
+b0 ]
+b0 -
+#65000
+b10000000000 D
+b100000000 "
+b100000000 C
+b100000000 B
+b0 ;
+19
+b101111111111 .
+b101111111111 :
+0H
+b1 )
+b1 5
+b1 ,
+b1 8
+1G
+b10 +
+b10 7
+0@
+b1 (
+b1 4
+0=
+b1 '
+b1 3
+b1010010011001010111001001101111011101010111010001100101001000000101001101000101010100100101111101000101001000000010110100111110001000000101001101000101010100100101111101001110 a
+b100000000 _
+b101111111111 `
+b1 [
+b1 ^
+b10 ]
+b1 Z
+b1 Y
+b1 -
+#70000
+1!
+b0 "
+b0 C
+b0 B
+b0 .
+b0 :
+b101001001100101011100100110111101110101011101000110010100100000011001010111100001101000011000010111010101110011011101000110010101100100001000000010110100111110001000000111001001100101011101000111001001111001 a
+b0 _
+b0 `
+b100000000 -
+#75000
+b0 -
+#85000
